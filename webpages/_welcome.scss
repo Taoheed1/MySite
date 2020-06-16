@@ -1,0 +1,63 @@
+#welcome_img {
+    width: 100%;
+    background-size: cover;
+    text-align: center;
+    img {
+        align-items: center;
+        border: black;
+    }
+}
+
+#uk_welcome {
+    @include welcome_img;
+    color: white !important;
+    background-color: red !important;
+    
+}
+
+#german_welcome {
+    @include welcome_img;
+    color: black;
+    background-color: yellow;
+}
+
+#french_welcome {
+    @include welcome_img;
+    color: blue;
+}
+
+#nigerian_welcome {
+    @include welcome_img;
+    color: green;
+}
+
+#italian_welcome {
+    @include welcome_img;
+    color: white;
+}
+
+#spanish_welcome{
+    @include welcome_img;
+    color: yellow;
+}
+
+// div.gallery {
+//     margin: 5px;
+//     border: 1px solid #ccc;
+//     float: left;
+//     width: 180px;
+// }
+  
+// div.gallery:hover {
+//     border: 1px solid #777;
+// }
+  
+// div.gallery img {
+//     width: 100%;
+//     height: auto;
+// }
+  
+// div.desc {
+//     padding: 15px;
+//     text-align: center;
+// }

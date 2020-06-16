@@ -1,0 +1,82 @@
+// .bk-materials{
+//     background-color: black;
+//     width: 100%;
+//     color: white;
+//     background-size: cover;
+// }
+
+@mixin bookBanner($background, $color) {
+    background-color: $background;
+    width: 100%;
+    color: $color;
+    background-size: cover;
+    text-align: center;
+}
+
+#books {
+    width: 100%;
+    background-size: cover;
+    text-align: center;
+}
+
+#materials{
+    @extend #books;
+    background: navy;
+    color: white;
+}
+
+#crosses{
+    @extend #books;
+    background: black;
+    color: white;
+}
+// #books {
+//     text-align: center;
+//     width: 250px;
+// }
+#bk-materials {
+    // background-color: black;
+    // width: 100%;
+    // color: white;
+    // background-size: cover;
+    // text-align: center;
+    @include bookBanner(navy, white)
+}
+
+#bk-crosses{
+    @include bookBanner(black, white)
+}
+
+
+
+
+// .bk-lights{
+//     height: 33%;
+//     background-size: cover;
+// }
+
+// .bk-knife{
+//     height: auto;
+//     width: 33%;
+//     background-size: cover;
+// }
+
+// .bk-spyglass{
+//     width: 33%;
+//     background-size: cover;
+// }
+
+.thumb{
+    padding:60px 10px;
+    text-align: center;
+    background: #ddd;
+    .thumb:nth-child(even){background: #eee;}
+    h1, h2{margin: 30px 0}
+    .container-fluid, .container{ margin: 50px auto; height: 200px;}
+}
+
+#book_grid {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 10px;
+}

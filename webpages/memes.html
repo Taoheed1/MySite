@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+   <link rel="stylesheet" type="text/css" href="../styles.css">
+
+   <title>My Webpage</title>
+ </head>
+  <body>
+
+    <ul id="navbar">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="anime.html">Anime</a></li>
+      <li><a href="reading.html">Reading</a></li>
+      <li><a href="memes.html">Memes</a></li>
+      <li><a href="gym.html">Gym</a></li>
+      <li id="about"><a href="about.html">About</a></li>
+    </ul>
+
+    <h1>Memes</h1>
+    <p>Hi there, the following is one of my favourite memes:</p>
+    <div class="container">
+      <img class="meme" src="../alpaca_meme.jpeg" alt="alpaca meme" style="width: auto";/>
+     <!--
+      <div class="overlay">
+        <div class="text">One of my favourite memes</div>
+        <button id="revealBtn" onclick=""> Reveal That MEME! </button>
+      </div>
+     --> 
+      <div class="card-body">
+        <h5 id="favourite-meme" class="card-title">My Favourite Meme</h5>
+        <p id="read-more" class="card-text">I flipping love alpacas, The Emperor's New Groove anyone?</p>
+        <a href="#" class="btn btn-primary" onclick="readFunction()">Read More</a>
+      </div>
+    </div>
+    
+    <script>
+      function readFunction() {
+        document.getElementById("favourite-meme").innerHTML = "Alpacas"
+        document.getElementById("read-more").innerHTML = "Alpaca, (Lama pacos), South American member of the camel family, Camelidae (order Artiodactyla), that is closely related to the llama, guanaco, and vicuña, which are known collectively as lamoids. The alpaca and the llama were both apparently domesticated several thousand years ago by the Indians of the Andes Mountains of South America. The other two lamoid species, the guanaco and vicuña, exist basically in the wild state."
+      }
+    </script>
+  </body>
+</html>

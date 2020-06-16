@@ -1,0 +1,90 @@
+@import './_table';
+@import './_bkCovers';
+@import './_toolbar';
+@import './_welcome';
+
+@media only screen and (max-width: 600px) {
+     
+}
+
+body {
+  border: none;
+}
+
+h1 {
+  color: black;
+  text-align: center;
+}
+
+p {
+  color: blue
+  border;
+}
+
+
+img {
+  width: 250px;
+  height: 320px;
+  object-fit: contain;
+  vertical-align: middle;
+}
+
+// col {
+//   display: flex;
+//   justify-self: center;
+//   align-items: center;
+// }
+// #books {
+//   width: 33%;
+//   height: auto;
+//   object-fit: cover;
+//   background-size: cover;
+// }
+
+/*
+.image {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+*/
+/*
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%
+  opacity: 50;
+  transition: .5s ease;
+  background-color: green
+}
+*/
+
+.container {
+  hover .overlay{
+  opacity: 1
+  }
+
+  .container .overlay .text {
+    color: white;
+    font-size: 40px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+  img.meme{
+    display: block;
+    height: 75%;
+    width: auto;
+    text-align: center;
+  /*vertical-align: middle;*/
+  } 
+}
